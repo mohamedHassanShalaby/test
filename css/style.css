@@ -1,0 +1,372 @@
+:root {
+  --main-color: #ff6452;
+  --p-color: #777;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+main {
+  padding: 50px;
+}
+section {
+  margin-bottom: 150px;
+}
+/* start header  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-right: 20px;
+}
+header ul li a {
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+header ul li a.active,
+header ul li a:hover {
+  transition: 0.5s;
+  background-color: #fff;
+  color: black;
+}
+/* end header  */
+
+/* start collection */
+section.collections,
+.quality,
+.offer {
+  display: flex;
+}
+.text {
+  margin-right: 50px;
+}
+span {
+  color: var(--main-color);
+}
+span.collect,
+span.product {
+  font-size: 20px;
+}
+.text h2 {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+p {
+  color: var(--p-color);
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+button {
+  margin-bottom: 50px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: var(--main-color);
+  font-size: 18px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+}
+.social {
+  margin-right: 50px;
+}
+.social h3 {
+  font-size: 50px;
+}
+.image {
+  background-color: rgb(85, 84, 84);
+  border-radius: 10px;
+}
+.social-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-img div {
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.social-img .active,
+.social-img div:hover {
+  border: 1px solid var(--main-color);
+}
+/* end collection  */
+
+/* start products */
+.products p {
+  margin-top: 20px;
+  font-size: 18px;
+  width: 50%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.stars {
+  display: flex;
+  align-items: center;
+}
+.stars i {
+  color: var(--main-color);
+  margin-right: 10px;
+  margin-top: -10px;
+}
+.card h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.card h5 {
+  color: var(--main-color);
+  font-size: 20px;
+}
+/* end products */
+
+/* start payment */
+.payment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.payment .pay {
+  box-shadow: 0 0 10px gray;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.pay i {
+  background-color: var(--main-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.pay h3 {
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.pay p {
+  font-size: 15px;
+}
+/* end payment */
+
+/* start offer  */
+.offer {
+  align-items: center;
+}
+.btn button:last-child {
+  background-color: #fff;
+  color: var(--main-color);
+  margin-left: 10px;
+}
+.btn button:last-child:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* end offer  */
+
+/* start customers */
+.customers {
+  background-color: rgb(85, 84, 84);
+  padding: 50px;
+}
+.customers div {
+  text-align: center;
+}
+.customers h2,
+.customers p {
+  margin-bottom: 20px;
+}
+.accounts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+.accounts .acount {
+  margin-right: 50px;
+}
+.accounts .image-acount {
+  margin-bottom: 30px;
+}
+.accounts img {
+  width: 100px;
+  border-radius: 50%;
+}
+.accounts p {
+  font-size: 18px;
+}
+.accounts .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accounts .stars i {
+  margin-bottom: 10px;
+}
+.accounts h3 {
+  font-size: 28px;
+}
+/* end customers */
+/* start forms */
+.forms {
+  display: flex;
+  justify-content: space-between;
+}
+.forms h2 {
+  font-size: 35px;
+}
+
+.forms .input {
+  position: relative;
+}
+.forms input {
+  width: 500px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: none;
+}
+.input button {
+  position: absolute;
+  left: 370px;
+  bottom: -43px;
+}
+.input button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+::placeholder {
+  font-size: 20px;
+}
+/* end forms */
+
+/* start footer */
+footer {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+}
+footer .image-footer {
+  margin-bottom: 30px;
+}
+footer .media {
+  display: flex;
+}
+footer .media i {
+  margin-right: 20px;
+}
+footer h3 {
+  margin-bottom: 10px;
+}
+footer ul li {
+  margin-bottom: 10px;
+  color: var(--p-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer ul li:hover {
+  color: #555;
+}
+/* end footer */
+
+/* start copyright */
+.copyright {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+/* end copyright */
+.menu .i{
+  display: none;
+}
+nav {
+  display: block;
+}
+@media (max-width: 1200px){ 
+  .collections {
+    flex-direction: column;
+  }
+  .collections .image {
+    background-color: transparent;
+  }
+  .collections .social-img {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .menu .i{
+    display: block;
+  }
+  header {
+    position: relative;
+  }
+  nav{
+    display: none;
+    padding: 10px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 80px;
+  }
+  .menu:hover nav {
+    display: block;
+  }
+  nav ul, .quality, .offer,.forms {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-bottom: 30px;
+  }
+  header ul li a.active,
+  header ul li a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  .cards,.payment {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pay {
+    margin-bottom: 20px;
+  }
+  .offer img {
+    width: 500px;
+  }
+  .forms div {
+    margin-bottom: 20px;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .list {
+    margin: 30px;
+  }
+}
